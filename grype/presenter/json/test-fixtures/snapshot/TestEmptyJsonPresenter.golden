@@ -1,39 +1,8 @@
 {
  "matches": [],
  "source": {
-  "type": "image",
-  "target": {
-   "userInput": "user-input",
-   "imageID": "sha256:d3e1fb516ff9cfe9407646ddd377ebdabc27c989a5228d870b8bebd8e105f3b4",
-   "manifestDigest": "sha256:46f5dd5aad14479e97bb6157a7261233bfffdb61e3c1067afb6f1b2a709f3fc7",
-   "mediaType": "application/vnd.docker.distribution.manifest.v2+json",
-   "tags": [
-    "stereoscope-fixture-image-simple:04e16e44161c8888a1a963720fd0443cbf7eef8101434c431de8725cd98cc9f7"
-   ],
-   "imageSize": 65,
-   "layers": [
-    {
-     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-     "digest": "sha256:41e7295da66c405eb3a4df29188dcf80f622f9304d487033a86d4a22e3f01abe",
-     "size": 22
-    },
-    {
-     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-     "digest": "sha256:68a2c166dcb3acf6b7303e995ca1fe7d794bd3b5852a0b4048f9c96b796086aa",
-     "size": 16
-    },
-    {
-     "mediaType": "application/vnd.docker.image.rootfs.diff.tar.gzip",
-     "digest": "sha256:36ad949c168c4fd54aab3183f2d84d54c263347dd789bf33fbac6953530873ac",
-     "size": 27
-    }
-   ],
-   "manifest": "eyJzY2hlbWFWZXJzaW9uIjoyLCJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmRpc3RyaWJ1dGlvbi5tYW5pZmVzdC52Mitqc29uIiwiY29uZmlnIjp7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuY29udGFpbmVyLmltYWdlLnYxK2pzb24iLCJzaXplIjo4NjYsImRpZ2VzdCI6InNoYTI1NjpkM2UxZmI1MTZmZjljZmU5NDA3NjQ2ZGRkMzc3ZWJkYWJjMjdjOTg5YTUyMjhkODcwYjhiZWJkOGUxMDVmM2I0In0sImxheWVycyI6W3sibWVkaWFUeXBlIjoiYXBwbGljYXRpb24vdm5kLmRvY2tlci5pbWFnZS5yb290ZnMuZGlmZi50YXIuZ3ppcCIsInNpemUiOjIwNDgsImRpZ2VzdCI6InNoYTI1Njo0MWU3Mjk1ZGE2NmM0MDVlYjNhNGRmMjkxODhkY2Y4MGY2MjJmOTMwNGQ0ODcwMzNhODZkNGEyMmUzZjAxYWJlIn0seyJtZWRpYVR5cGUiOiJhcHBsaWNhdGlvbi92bmQuZG9ja2VyLmltYWdlLnJvb3Rmcy5kaWZmLnRhci5nemlwIiwic2l6ZSI6MjA0OCwiZGlnZXN0Ijoic2hhMjU2OjY4YTJjMTY2ZGNiM2FjZjZiNzMwM2U5OTVjYTFmZTdkNzk0YmQzYjU4NTJhMGI0MDQ4ZjljOTZiNzk2MDg2YWEifSx7Im1lZGlhVHlwZSI6ImFwcGxpY2F0aW9uL3ZuZC5kb2NrZXIuaW1hZ2Uucm9vdGZzLmRpZmYudGFyLmd6aXAiLCJzaXplIjozNTg0LCJkaWdlc3QiOiJzaGEyNTY6MzZhZDk0OWMxNjhjNGZkNTRhYWIzMTgzZjJkODRkNTRjMjYzMzQ3ZGQ3ODliZjMzZmJhYzY5NTM1MzA4NzNhYyJ9XX0=",
-   "config": "eyJhcmNoaXRlY3R1cmUiOiJhbWQ2NCIsImNvbmZpZyI6eyJFbnYiOlsiUEFUSD0vdXNyL2xvY2FsL3NiaW46L3Vzci9sb2NhbC9iaW46L3Vzci9zYmluOi91c3IvYmluOi9zYmluOi9iaW4iXSwiV29ya2luZ0RpciI6Ii8iLCJPbkJ1aWxkIjpudWxsfSwiY3JlYXRlZCI6IjIwMjEtMTItMDlUMTc6MDk6NTAuNDc1ODQ1MjE3WiIsImhpc3RvcnkiOlt7ImNyZWF0ZWQiOiIyMDIxLTEyLTA5VDE3OjA5OjUwLjQyMzQ2MTI1OVoiLCJjcmVhdGVkX2J5IjoiQUREIGZpbGUtMS50eHQgL3NvbWVmaWxlLTEudHh0ICMgYnVpbGRraXQiLCJjb21tZW50IjoiYnVpbGRraXQuZG9ja2VyZmlsZS52MCJ9LHsiY3JlYXRlZCI6IjIwMjEtMTItMDlUMTc6MDk6NTAuNDQ4MzcyMTIxWiIsImNyZWF0ZWRfYnkiOiJBREQgZmlsZS0yLnR4dCAvc29tZWZpbGUtMi50eHQgIyBidWlsZGtpdCIsImNvbW1lbnQiOiJidWlsZGtpdC5kb2NrZXJmaWxlLnYwIn0seyJjcmVhdGVkIjoiMjAyMS0xMi0wOVQxNzowOTo1MC40NzU4NDUyMTdaIiwiY3JlYXRlZF9ieSI6IkFERCB0YXJnZXQgLyAjIGJ1aWxka2l0IiwiY29tbWVudCI6ImJ1aWxka2l0LmRvY2tlcmZpbGUudjAifV0sIm9zIjoibGludXgiLCJyb290ZnMiOnsidHlwZSI6ImxheWVycyIsImRpZmZfaWRzIjpbInNoYTI1Njo0MWU3Mjk1ZGE2NmM0MDVlYjNhNGRmMjkxODhkY2Y4MGY2MjJmOTMwNGQ0ODcwMzNhODZkNGEyMmUzZjAxYWJlIiwic2hhMjU2OjY4YTJjMTY2ZGNiM2FjZjZiNzMwM2U5OTVjYTFmZTdkNzk0YmQzYjU4NTJhMGI0MDQ4ZjljOTZiNzk2MDg2YWEiLCJzaGEyNTY6MzZhZDk0OWMxNjhjNGZkNTRhYWIzMTgzZjJkODRkNTRjMjYzMzQ3ZGQ3ODliZjMzZmJhYzY5NTM1MzA4NzNhYyJdfX0=",
-   "repoDigests": [],
-   "architecture": "",
-   "os": ""
-  }
+  "type": "unknown",
+  "target": "unknown"
  },
  "distro": {
   "name": "centos",
@@ -44,6 +13,7 @@
  },
  "descriptor": {
   "name": "grype",
-  "version": "[not provided]"
+  "version": "[not provided]",
+  "timestamp":""
  }
 }
