@@ -5,18 +5,25 @@ There are a few useful things to know before diving into the codebase. This proj
 ## Getting started
 
 After cloning do the following:
-1. run `make bootstrap` to download go mod dependencies, create the `/.tmp` dir, and download helper utilities.
+
+1. run `go build ./cmd/grype` to get a binary named `main` from the source (use `-o <name>` to get a differently named binary), or optionally `go run ./cmd/grype` to run from source.
+
+In order to run tests and build all artifacts:
+
+1. run `make bootstrap` to download go mod dependencies, create the `/.tmp` dir, and download helper utilities (this only needs to be done once or when build tools are updated).
 2. run `make` to run linting, tests, and other verifications to make certain everything is working alright.
 
-Checkout `make help` to see what other actions you can take.
+The main make tasks for common static analysis and testing are `lint`, `format`, `lint-fix`, `unit`, and `integration`.
+
+See `make help` for all the current make tasks.
 
 ## Relationship to Syft
 
-Grype uses Syft as a library for all-things related to obtaining and parsing the given scan target (pulling container 
+Grype uses Syft as a library for all-things related to obtaining and parsing the given scan target (pulling container
 images, parsing container images, indexing directories, cataloging packages, etc). Releases of Grype should
-always use released versions of Syft (commits that are tagged and show up in the GitHub releases page). However, 
-continually integrating unreleased Syft changes into Grype incrementally is encouraged 
-(e.g. `go get github.com/anchore/syft@main`) as long as by the time a release is cut the Syft version is updated 
+always use released versions of Syft (commits that are tagged and show up in the GitHub releases page). However,
+continually integrating unreleased Syft changes into Grype incrementally is encouraged
+(e.g. `go get github.com/anchore/syft@main`) as long as by the time a release is cut the Syft version is updated
 to a released version (e.g. `go get github.com/anchore/syft@v<semantic-version>`).
 
 ## Inspecting the database
@@ -24,7 +31,7 @@ to a released version (e.g. `go get github.com/anchore/syft@v<semantic-version>`
 The currently supported database format is Sqlite3. Install `sqlite3` in your system and ensure that the `sqlite3` executable is available in your path. Ask `grype` about the location of the database, which will be different depending on the operating system:
 
 ```
-$ go run main.go db status
+$ go run ./cmd/grype db status
 Location:  /Users/alfredo/Library/Caches/grype/db
 Built:  2020-07-31 08:18:29 +0000 UTC
 Current DB Version:  1
